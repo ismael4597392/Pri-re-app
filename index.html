@@ -1,0 +1,48 @@
+
+    <!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- Titre affiché dans l’onglet du navigateur -->
+  <title>Horaires de Prière</title>
+
+  <!-- Lien vers le fichier CSS (design) -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Pour rendre l’app installable plus tard -->
+  <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+
+  <!-- Boîte principale -->
+  <div class="container">
+
+    <!-- Titre -->
+    <h1>🕌 Horaires de Prière</h1>
+
+    <!-- Ville -->
+    <h2 id="ville">Karabük - Turquie</h2>
+
+    <!-- Liste des prières -->
+     <input id="villeInput" placeholder="Entrer une ville">
+<button id="villeBtn">Valider la ville</button>
+    <ul>
+      <li>Fajr : <span id="fajr">--:--</span></li>
+      <li>Dhuhr : <span id="dhuhr">--:--</span></li>
+      <li>Asr : <span id="asr">--:--</span></li>
+      <li>Maghrib : <span id="maghrib">--:--</span></li>
+      <li>Isha : <span id="isha">--:--</span></li>
+    </ul>
+
+    <!-- Bouton -->
+    <button id="btn">Charger les horaires</button>
+
+  </div>
+
+  <!-- Lien vers le JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>
